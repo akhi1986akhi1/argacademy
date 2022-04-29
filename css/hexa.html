@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hexagonal image hover effect</title>
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height:100vh;
+
+        }
+        .container-u{
+            position:relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+
+            
+
+        }
+
+        .container-u .hexagone{
+            position:relative;
+            width:350px;
+            height:400px;
+            margin: 50px 20px 70px;
+            border:solid 1px white;
+            
+        }
+        .container-u .hexagone:before{
+            content:"";
+            position:absolute;
+            bottom:-70px;
+            width:100%;
+            height:60px;
+            background:radial-gradient(rgba(0,0,0,0.15),transparent,transparent);
+            border-radius: 50%;
+            transition: 0.5s;
+
+        }
+        .container-u .hexagone:hover::before{
+            opacity:0.8;
+            transform: scale(0.8);
+        }
+        .container-u .hexagone .shape{
+            position:absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            background:#000;
+            background: url(/static/sssutms/sssutms_img.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            clip-path: polygon(50% 0, 100% 26%, 100% 80%, 50% 100%, 0 80%, 0 26%);
+            transition: 0.5s;
+            border:solid 1px white;
+        }
+        #shape2{
+            background: url(/static/SVNU/svnu_img.jpg);
+        }
+        #shape3{
+            background: url(/static/mgu/mgu-img.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+        .container-u .hexagone .shape h3{
+            width:100%;
+            position: absolute;
+            bottom:90px;
+            text-align: center;
+            font-size: 40px;
+        }
+       
+        .container-u .hexagone:hover .shape{
+            transform: translateY(-30px);
+        }
+
+        
+        .container-u .hexagone .shape img{
+            position:absolute;
+            top:0;
+            left:0;
+            width:100%;
+            height:100%;
+            object-fit: cover;
+            /* z-index: -1; */
+
+        }
+        .container-u .hexagone .shape .content-u{
+            position:absolute;
+            top:0;
+            left:0;
+            width: 100%;
+            height:100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            text-align: center;
+            background: linear-gradient(45deg,#03a9f4,rgba(3,169,244,0.5));
+            color:#fff;
+            opacity:0.4;
+            transition: 0.5s;
+        }
+        .container-u .hexagone:hover .shape .content-u{
+            opacity:1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-u">
+        <div class="hexagone">
+            <div class="shape">
+                <h3>SSSUTMS</h3>>
+                <!-- <img src="/static/sssutms/sssutms_img.jpg"> -->
+                <div class="content-u">
+                    <div>
+                        <h2>Some one</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa rerum eum eligendi pariatur explicabo repudiandae odit illo provident? Non accusamus commodi enim a fugiat deserunt consectetur laborum perspiciatis rerum omnis.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hexagone">
+            <div class="shape" id="shape2">
+                <h3>SVNU</h3>>
+                <!-- <img src="/static/SVNU/svnu_img.jpg"> -->
+                <div class="content-u">
+                    <div>
+                        <h2>Some one</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa rerum eum eligendi pariatur explicabo repudiandae odit illo provident? Non accusamus commodi enim a fugiat deserunt consectetur laborum perspiciatis rerum omnis.</p>
+                    </div>
+                    </div>    
+            </div>
+        </div>
+        <div class="hexagone">
+            <div class="shape" id="shape3">
+                <h3>MGU</h3>>
+            <!-- <img src="/static/mgu/yoga.jpg"> -->
+            <div class="name">MGU</div>
+            <div class="content-u">
+                <div>
+                    <h2>Some one</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa rerum eum eligendi pariatur explicabo repudiandae odit illo provident? Non accusamus commodi enim a fugiat deserunt consectetur laborum perspiciatis rerum omnis.</p>
+                </div>         
+            </div>
+        </div>
+    </div>
+</body>
+</html>

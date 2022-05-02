@@ -444,6 +444,12 @@
     .t1 table tr:nth-child(17){
         background: #03a8f427;
     }
+    .t1 table tr:nth-child(19){
+        background: #03a8f427;
+    }
+    .t1 table tr:nth-child(21){
+        background: #03a8f427;
+    }
     .t1 table, tr,th, td{
         border:solid 1px #03a8f46b;
         border-collapse: collapse;

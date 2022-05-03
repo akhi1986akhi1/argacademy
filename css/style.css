@@ -357,6 +357,7 @@
         width:100%;
         margin:0px;
         padding:10px;
+        padding-bottom:50px;
         /* height:30vh; */
         border:rgba(250, 246, 246, 0.301) solid 1px;
         box-sizing: border-box;

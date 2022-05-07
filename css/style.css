@@ -312,9 +312,7 @@
         justify-content: center;
         align-items: center;
         min-height: 60vh;
-
-        
-
+        transform: translateX(-800px);
     }
     .b31{
         display: flex;
@@ -347,6 +345,7 @@
     .eng-box{
         display:none;
         margin-left:100px;
+
     }
     .active{
         display: block;
@@ -362,7 +361,9 @@
         border:rgba(250, 246, 246, 0.301) solid 1px;
         box-sizing: border-box;
 
+
     }
+    
     .fee-cnt-box h1{
         margin-bottom:0px;
         /* color:yellow; */

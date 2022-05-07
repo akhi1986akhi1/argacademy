@@ -5615,6 +5615,7 @@
             $("#svnu").hide();
             $("#mgu").hide();
             $("#mku").show();
+            $(".s2").show()
             document.getElementById("temp").innerHTML = ' <ion-icon name="chevron-forward-outline"></ion-icon><span style="color:rgb(252, 83, 4); text-shadow:black 5px 5px 10px"> MKU</span>';
 
         })
@@ -6110,11 +6111,15 @@
             $(".eng-box").hide();
             $(".active").show();
             $(".fee-cnt").hide();
+
             let idstr = this.id.toString();
             let id = 'cnt-' + idstr;
             console.log(idstr);
             console.log(id)
             $("#" + id).show();
+            // $(".fee-cnt").animate({left:'-700px'})
+            $("#" + id).animate({left: '0px'});
+            $("#" + id).animate({left: '800px'});
 
             $(".btn").css("background-color", "transparent");
             $("#btn-mtech-mgu").css("background-color", "#03a9f433");
@@ -6122,6 +6127,8 @@
             $("#btn-msc-mgu").css("background-color", "#03a9f433");
             $("#btn-ma-mgu").css("background-color", "#03a9f433");
             $("#btn-agri-msc").css("background-color", "#03a9f433");
+
+
         })
 
         $(".btn").click(function () {

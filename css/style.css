@@ -312,7 +312,7 @@
         justify-content: center;
         align-items: center;
         min-height: 60vh;
-        transform: translateX(-800px);
+        /* transform: translateX(-800px); */
     }
     .b31{
         display: flex;

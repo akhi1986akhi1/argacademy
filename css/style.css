@@ -11,6 +11,20 @@
         margin:0;
     
     }
+
+
+    body::-webkit-scrollbar {
+        width: 12px;
+        height:12px;
+        }
+    body::-webkit-scrollbar-track {
+        background:linear-gradient(rgb(2, 127, 245),rgb(3, 252, 98),rgb(213, 250, 2),#03a9f4);
+        border-radius: 20px;
+        }
+    body::-webkit-scrollbar-thumb {
+        background-color: goldenrod;
+        border-radius: 20px;
+        }
     .banner{
         display: flex;
         justify-content: center;
@@ -19,7 +33,7 @@
         height:90px;
         position: sticky;
         top:0px;
-        background: linear-gradient(to right,#000099, #a730df, #000,#a730df, #000099);
+        background: linear-gradient(to right,#013a68, #013b5c, #000,#025b6b, #013a68);
         /* background-image:url(../img/banner/banner02_01.jpg); */
         background-size: cover;
         background-repeat: no-repeat;
@@ -29,21 +43,24 @@
 
     }
     .banner img{
-        width:80px;
+        width:140px;
+        height:auto;
         margin-left: 300px;
         border-radius: 100%;
-        border:2px solid #060c0f;
-        box-shadow: inset 0px 0px 10px #03a9f4;
-        background-color: black;
+        border:1px solid #060c0f79;
+        box-shadow: 0px 0px 10px #03a9f4;
+        background-color: rgba(0, 0, 0, 0.44);
     }
     .banner h1{
+        position: relative;
         margin:0px;
         padding: 0px;
         text-align: center;
         font-size:60px;
         /* font-weight: bolder; */
         text-shadow: -9px -1px 14px rgb(7, 7, 7);
-        -webkit-text-stroke: 2px #03a9f4;
+        /* -webkit-text-stroke: 2px #03a9f4; */
+        color:rgb(5, 255, 55);
         
         
     }
@@ -172,8 +189,6 @@
     
     }
 
-
-
     .content{
         display:none;
         border:rgb(30, 88, 33) solid 0px;
@@ -201,9 +216,6 @@
 
     }
     
-    
-    
-
     .box{
         display: flex;
         justify-content: center;
@@ -1848,7 +1860,7 @@
         display: flex;
         flex-flow: column;
         padding: 10px;
-        /* width:200px; */
+        /* width:230px; */
         /* height:180px; */
         /* justify-content: center; */
         /* align-items: center; */
@@ -1863,7 +1875,7 @@
     }
     #footer_box_1{
         align-items: flex-start;
-        width:200px;
+        width:230px;
     }
     #footer_box_1 h2{
         width: 100%;
@@ -1876,12 +1888,9 @@
     #footer_box_1 span {
         text-align: left;
         font-weight: bold;
+        line-height: 20px;
         color:rgb(51, 49, 49);
         padding: 10px;
-
-
-    
-
     }
 
 
@@ -1899,6 +1908,7 @@
     #footer_box_2 span {
         text-align: left;
         font-weight: bold;
+        line-height: 20px;
         padding: 10px;
         color:rgb(51, 49, 49);
 
@@ -2469,22 +2479,61 @@
             hsl(218, 41%, 20%) 75%,
             hsl(218, 41%, 19%) 80%,
             transparent 100%);
-        height:50vh;
+        /* height:50vh; */
       }
+    #about_sec h1{
+        display: inline-block;
+        position: relative;
+        padding-top: 10px;
+      }
+    #about_sec h1:before{
+        content:"";
+        position: absolute;
+        width:30%;
+        height:3px;
+        bottom: -1px;
+        background: goldenrod;
+
+      }
+
     .about-h{
         display: flex;
+        flex-direction: column;
         width:100%;
         height:100%;
         align-items: center;
         justify-content: center;
     }
-    .about-h h1{
+    .about-h h2{
         display: block;
         width:70%;
         text-align: center;
         font-size: 3em;
         color: thistle;
         margin-bottom: 40px;
+        margin-top: 80px;
+    }
+    .content .about-h .about-vision div img{
+        width:500px;
+
+    }
+    .content .about-h .about-vision{
+        display: flex;
+    }
+    .content .about-h .about-vision div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-content: center;
+        width:600px;
+    }
+    .content .about-h .about-vision div p{
+        font-size: 1.3 rem;
+        text-align: justify;
+        line-height: 1.8rem;
+        font-weight: 700;
+        color:whitesmoke;
+        letter-spacing: 1px;
     }
     
     /* MKU SECTION START HERE */

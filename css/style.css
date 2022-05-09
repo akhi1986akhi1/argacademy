@@ -613,6 +613,8 @@
     .slide-nav-cnt li:hover{
         cursor: pointer;
         background:#8d8c8c66;
+        padding-top:5px;
+        padding-bottom: 5px;
         margin-left:8px;
         transition: 0.5s;
 

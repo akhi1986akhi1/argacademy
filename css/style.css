@@ -2615,3 +2615,12 @@
         text-shadow: 5px -5px 15px black;
         border:solid black 0px;
     }
+
+
+
+@media(max-width:991px){
+    .content .about-h .about-vision {
+        display: flex;
+        flex-direction: column;
+    }   
+}

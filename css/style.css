@@ -2710,7 +2710,7 @@
         display: none;
     }
     .process-flow-box{
-        height:10vh;
+        height:15vh;
         margin-top: 0;
         margin-bottom: 0;
 
@@ -2766,17 +2766,17 @@
     }
     .flow div span:nth-child(1){
         margin-top: 0px;
-        margin-left:45px;
+        margin-left:25px;
         
     }
     .flow .flow-s-01 span:nth-child(2){
         margin-top: 10px;
-        margin-left:64px;
+        margin-left:34px;
         
     }
     .flow .flow-s-01 span:nth-child(3){
         margin-top: 10px;
-        margin-left:45px;
+        margin-left:25px;
         
     }
     .flow .flow-s-02 span:nth-child(1){

@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <script src="https://www.momentcrm.com/embed"></script>
+    
     <script>
         MomentCRM('init', {
             'teamVanityId': 'akhi1986akhi',
@@ -23,6 +24,11 @@
 </head>
 
 <body>
+    <!-- window loader -->
+    <div class="loader-wraper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+    <!-- window loader end -->
     <!-- Tab button-->
     <div class="banner">
         <h1><span style="color:rgb(5, 255, 55)">A</span><span style="color:rgb(117, 121, 118)">R</span><span
@@ -7208,6 +7214,25 @@
     </script>
 
     <!-- smtp script start here -->
+    <!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script>
+        function clickMe(){
+            console.log("clicked Me")
+            swal("Done!","Saved Successfully","success").then((value) => {
+        // swal(`The returned value is: ${value}`);
+            // window.location.replace('https://www.google.com/');
+            });
+        }
+        $(document).ready(()=>{
+            clickMe();
+        })
+    </script> -->
+    <script>
+        $(window).on("load",function(){
+            $(".loader-wraper").fadeOut("slow");
+        })
+    </script>
+
 </body>
 
 </html>
